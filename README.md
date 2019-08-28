@@ -1,1 +1,2 @@
-Working wiht data workflow 
+Applying Machine Learning to
+Sentiment Analysis Project 
