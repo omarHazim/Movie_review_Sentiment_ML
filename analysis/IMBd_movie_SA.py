@@ -38,8 +38,7 @@ def shuffle_dataset(df):
     '''shuffle the stored data to prepare for splitting training and testing datasets'''
     np.random.seed(0)
     df = df.reindex(np.random.permutation(df.index))
-    return df.to_csv('C://Users//omar.hazim//movie_review//movie_dataset//mv_data.csv', index=False)
-
+    return df.to_csv('C://Users//omar.hazim//movie_review//movies_data//raw_data//mv_data.csv', index=False)
 
 # In[ ]:
 
@@ -51,13 +50,13 @@ def main():
     df = create_sa_df()
     print(df.head())
     
-    #Shuffle dataset and create .csv file
+     #Shuffle dataset and create .csv file
     shuffle_dataset(df)
-    df_shuffled = pd.read_csv('C://Users//omar.hazim//movie_review//movie_data//raw_data//mv_data.csv')
+    df_shuffled = pd.read_csv('C://Users//omar.hazim//movie_review//movies_data//raw_data//mv_data.csv')
     print('Shuffled dataset:',df_shuffled.head())
     
     
-
+# run main file 
 if __name__ == '__main__':
     main()
 
