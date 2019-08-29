@@ -7,3 +7,5 @@ dependencies:
  - requests
  - pandas
  - click
+ - pip:
+   - pyprind=2.11.2
